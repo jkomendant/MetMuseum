@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d73967b-a0a7-4ae4-a5d1-c9ea5e2d269b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cMwtvUbISom2W4MddltVsv9W9Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="komendant.met.museum" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.MetMuseumServiceTest.getObject">
+    <configuration name="MetMuseumServiceTest.getDepartmentObjects" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;komendant.met.museum.MetMuseumServiceTest.getDepartmentObjects&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MetMuseumServiceTest.getDepartments" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;komendant.met.museum.MetMuseumServiceTest.getDepartments&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MetMuseumServiceTest.getObject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;komendant.met.museum.MetMuseumServiceTest.getObject&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MetMuseumServiceTest.getObject" />
+        <item itemvalue="Gradle.MetMuseumServiceTest.getDepartmentObjects" />
+        <item itemvalue="Gradle.MetMuseumServiceTest.getDepartments" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d73967b-a0a7-4ae4-a5d1-c9ea5e2d269b" name="Default Changelist" comment="" />
+      <created>1590351987354</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590351987354</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="856" height="156" key="GridCell.Tab.0.bottom" timestamp="1590446992974">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="856" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590446992974" />
+    <state width="856" height="156" key="GridCell.Tab.0.center" timestamp="1590446992973">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="856" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590446992973" />
+    <state width="856" height="156" key="GridCell.Tab.0.left" timestamp="1590446992973">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="856" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590446992973" />
+    <state width="856" height="156" key="GridCell.Tab.0.right" timestamp="1590446992973">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="856" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590446992973" />
+    <state width="856" height="195" key="GridCell.Tab.1.bottom" timestamp="1590444573093">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="856" height="195" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590444573093" />
+    <state width="856" height="195" key="GridCell.Tab.1.center" timestamp="1590444573093">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="856" height="195" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1590444573093" />
+    <state width="856" height="195" key="GridCell.Tab.1.left" timestamp="1590444573093">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="856" height="195" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1590444573093" />
+    <state width="856" height="195" key="GridCell.Tab.1.right" timestamp="1590444573093">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="856" height="195" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1590444573093" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1590439433328">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590439433328" />
+    <state x="454" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590441533436">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="454" y="81" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1590441533436" />
+    <state x="65" y="0" key="new project wizard" timestamp="1590352026061">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1590352026061" />
+  </component>
+</project>
