@@ -13,6 +13,12 @@ public class MetMuseum {
             int departmentId;
             String displayName;
 
+            @Override
+            public String toString() {
+
+                return displayName;
+            }
+
         }
     }
 
@@ -24,7 +30,6 @@ public class MetMuseum {
     class Object {
         int accessionYear;
         String primaryImage;
-        String department;
         String title;
         String culture;
         String artistDisplayName;

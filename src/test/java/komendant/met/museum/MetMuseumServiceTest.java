@@ -71,7 +71,6 @@ public class MetMuseumServiceTest {
         assertNotNull(object.city);
         assertNotNull(object.country);
         assertNotNull(object.culture);
-        assertNotNull(object.department);
         assertNotNull(object.primaryImage);
         assertNotNull(object.title);
 
