@@ -5,11 +5,11 @@ import java.util.List;
 
 public class MetMuseum {
 
-    class DepartmentList {
+    static class DepartmentList {
         List<Department> departments;
 
 
-        class Department {
+        static class Department {
             int departmentId;
             String displayName;
 
@@ -22,12 +22,12 @@ public class MetMuseum {
         }
     }
 
-    class DepartmentObjects {
+    static class DepartmentObjects {
         int total;
         ArrayList<Integer> objectIDs;
     }
 
-    class Object {
+    static class Object {
         int accessionYear;
         String primaryImage;
         String title;

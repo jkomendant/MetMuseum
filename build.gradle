@@ -11,6 +11,18 @@ repositories {
     mavenCentral()
 }
 
+// https://stackoverflow.com/a/4894308/2700520
+jar {
+    manifest {
+        attributes "Main-Class": "schwimmer.nasa.neo.NeoFrame"
+    }
+
+    // this will put all the dependencies in the jar file
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.squareup.retrofit2:retrofit:2.8.1'

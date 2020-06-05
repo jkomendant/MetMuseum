@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="komendant.met.museum.MetMuseumServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-01T17:26:30" hostname="Home" time="17.042">
-  <properties/>
-  <testcase name="getDepartmentObjects" classname="komendant.met.museum.MetMuseumServiceTest" time="17.042"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

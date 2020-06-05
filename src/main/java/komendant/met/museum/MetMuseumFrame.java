@@ -1,7 +1,6 @@
 package komendant.met.museum;
 
 import javax.swing.*;
-import javax.swing.plaf.basic.BasicArrowButton;
 import java.awt.*;
 
 public class MetMuseumFrame extends JFrame {
@@ -18,13 +17,13 @@ public class MetMuseumFrame extends JFrame {
     JLabel country;
     JPanel objectPanel;
     JPanel arrowPanel;
-    BasicArrowButton prevButton;
-    BasicArrowButton nextButton;
+    JButton prevButton;
+    JButton nextButton;
     MetMuseumService service;
     MetMuseumController controller;
 
     public MetMuseumFrame(){
-        setSize(700,500);
+        setSize(800,600);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("Virtual Met Museum");
         setLayout(new BorderLayout());
@@ -49,16 +48,16 @@ public class MetMuseumFrame extends JFrame {
         artistDisplayName = new JLabel();
         city = new JLabel();
         country = new JLabel();
-        prevButton = new BasicArrowButton(BasicArrowButton.WEST);
-        nextButton = new BasicArrowButton(BasicArrowButton.EAST);
+        prevButton = new JButton("Previous");
+        nextButton = new JButton("Next");
 
-        objectPanel.add(primaryImage);
         objectPanel.add(title);
         objectPanel.add(year);
         objectPanel.add(culture);
         objectPanel.add(artistDisplayName);
         objectPanel.add(city);
         objectPanel.add(country);
+        objectPanel.add(primaryImage);
 
         prevButton.addActionListener(ActionEvent -> getPrevObject());
         nextButton.addActionListener(ActionEvent -> getNextObject());
@@ -72,8 +71,8 @@ public class MetMuseumFrame extends JFrame {
 
         service = new MetMuseumServiceFactory().getInstance();
         controller = new MetMuseumController(service, primaryImage, title, year, culture, artistDisplayName,
-                city, country, prevButton, nextButton);
-        controller.requestDepartments(departmentJComboBox);
+                city, country, prevButton, nextButton, departmentJComboBox);
+        controller.requestDepartments();
     }
 
     public void getDepartmentObjects(){

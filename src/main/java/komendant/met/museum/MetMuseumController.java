@@ -3,10 +3,8 @@ package komendant.met.museum;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.plaf.basic.BasicArrowButton;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -24,13 +22,15 @@ public class MetMuseumController {
     JLabel artistDisplayName;
     JLabel city;
     JLabel country;
-    BasicArrowButton prevButton;
-    BasicArrowButton nextButton;
+    JButton prevButton;
+    JButton nextButton;
+    JComboBox<MetMuseum.DepartmentList.Department> departmentJComboBox;
 
     ArrayList<Integer> objectIDs;
     public MetMuseumController(MetMuseumService service, JLabel primaryImage,
                                JLabel title, JLabel year, JLabel culture, JLabel artistDisplayName,
-                               JLabel city, JLabel country, BasicArrowButton prevButton, BasicArrowButton nextButton){
+                               JLabel city, JLabel country, JButton prevButton, JButton nextButton,
+                               JComboBox<MetMuseum.DepartmentList.Department> departmentJComboBox){
 
         this.service = service;
         this.primaryImage = primaryImage;
@@ -42,30 +42,40 @@ public class MetMuseumController {
         this.country = country;
         this.prevButton = prevButton;
         this.nextButton = nextButton;
+        this.departmentJComboBox = departmentJComboBox;
 
     }
 
-    public void requestDepartments(JComboBox<MetMuseum.DepartmentList.Department> departmentJComboBox){
-        service.getDepartments().enqueue(new Callback<MetMuseum.DepartmentList>() {
-            @Override
-            public void onResponse(Call<MetMuseum.DepartmentList> call, Response<MetMuseum.DepartmentList> response) {
-                MetMuseum.DepartmentList departmentList = response.body();
-                assert departmentList != null;
-                List<MetMuseum.DepartmentList.Department> departments = departmentList.departments;
-                for(MetMuseum.DepartmentList.Department department : departments){
-                    departmentJComboBox.addItem(department);
-                }
-            }
-
-            @Override
-            public void onFailure(Call<MetMuseum.DepartmentList> call, Throwable t) {
-                t.printStackTrace();
-            }
-        });
+    public void requestDepartments(){
+        service.getDepartments().enqueue(getCallbackDepartments());
     }
+
+            public Callback<MetMuseum.DepartmentList> getCallbackDepartments() {
+                return new Callback<MetMuseum.DepartmentList>() {
+                    @Override
+                    public void onResponse(Call<MetMuseum.DepartmentList> call, Response<MetMuseum.DepartmentList> response) {
+                        MetMuseum.DepartmentList departmentList = response.body();
+                        assert departmentList != null;
+                        List<MetMuseum.DepartmentList.Department> departments = departmentList.departments;
+                        for(MetMuseum.DepartmentList.Department department : departments){
+                            departmentJComboBox.addItem(department);
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<MetMuseum.DepartmentList> call, Throwable t) {
+                        t.printStackTrace();
+                    }
+                };
+            }
 
     public void requestObjects(int depID){
-        service.getDepartmentObjects(depID).enqueue(new Callback<MetMuseum.DepartmentObjects>() {
+        service.getDepartmentObjects(depID).enqueue(getCallbackDepartmentObjects());
+    }
+
+        public Callback<MetMuseum.DepartmentObjects> getCallbackDepartmentObjects() {
+        return new Callback<MetMuseum.DepartmentObjects>() {
             @Override
             public void onResponse(Call<MetMuseum.DepartmentObjects> call, Response<MetMuseum.DepartmentObjects> response) {
                 MetMuseum.DepartmentObjects departmentObjects = response.body();
@@ -78,7 +88,7 @@ public class MetMuseumController {
             public void onFailure(Call<MetMuseum.DepartmentObjects> call, Throwable t) {
                 t.printStackTrace();
             }
-        });
+        };
     }
 
     public void requestObjectData(int objectIndex){
@@ -128,11 +138,12 @@ public class MetMuseumController {
                 artistDisplayName.setText(object.artistDisplayName);
                 culture.setText(object.culture);
                 city.setText(object.city);
-                country.setText(object.country);            }
+                country.setText(object.country);
+            }
 
             @Override
             public void onFailure(Call<MetMuseum.Object> call, Throwable t) {
-
+                t.printStackTrace();
             }
         };
     }
