@@ -16,4 +16,4 @@ When it is available, the following is displayed:
 
 Download executable [jar file](https://github.com/jkomendant/MetMuseum/blob/master/build/libs/met-museum-1.0-SNAPSHOT.jar).
 
-![Initial Screen](screenshots/virtual met museum.png)
+![Met Example](screenshots/VirtualMetMuseum.png)

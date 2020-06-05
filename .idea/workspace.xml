@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d73967b-a0a7-4ae4-a5d1-c9ea5e2d269b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/komendant/met/museum/MetMuseumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/komendant/met/museum/MetMuseumController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/komendant/met/museum/MetMuseumFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/komendant/met/museum/MetMuseumFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/komendant/met/museum/MetMuseumControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/komendant/met/museum/MetMuseumControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/komendant/met/museum/MetMuseumServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/komendant/met/museum/MetMuseumServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
