@@ -5,25 +5,25 @@ import java.awt.*;
 
 public class MetMuseumFrame extends JFrame {
 
-    int index;
-    JComboBox<MetMuseum.DepartmentList.Department> departmentJComboBox;
-    JPanel departmentPanel;
-    JLabel primaryImage;
-    JLabel title;
-    JLabel year;
-    JLabel culture;
-    JLabel artistDisplayName;
-    JLabel city;
-    JLabel country;
-    JPanel objectPanel;
-    JPanel arrowPanel;
-    JButton prevButton;
-    JButton nextButton;
-    MetMuseumService service;
-    MetMuseumController controller;
+    private int index;
+    private JComboBox<MetMuseum.DepartmentList.Department> departmentJComboBox;
+    private JPanel departmentPanel;
+    private JLabel primaryImage;
+    private JLabel title;
+    private JLabel year;
+    private JLabel culture;
+    private JLabel artistDisplayName;
+    private JLabel city;
+    private JLabel country;
+    private JPanel objectPanel;
+    private JPanel arrowPanel;
+    private JButton prevButton;
+    private JButton nextButton;
+    private MetMuseumService service;
+    private MetMuseumController controller;
 
-    public MetMuseumFrame(){
-        setSize(800,600);
+    public MetMuseumFrame() {
+        setSize(800, 600);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("Virtual Met Museum");
         setLayout(new BorderLayout());
@@ -75,7 +75,7 @@ public class MetMuseumFrame extends JFrame {
         controller.requestDepartments();
     }
 
-    public void getDepartmentObjects(){
+    public void getDepartmentObjects() {
         MetMuseum.DepartmentList.Department selectDepartment =
                 (MetMuseum.DepartmentList.Department) departmentJComboBox.getSelectedItem();
         assert selectDepartment != null;
@@ -84,17 +84,18 @@ public class MetMuseumFrame extends JFrame {
         index = 0;
     }
 
-    public void  getPrevObject(){
-        index --;
+    public void getPrevObject() {
+        index--;
         controller.requestObjectData(index);
     }
 
-    public void getNextObject(){
+    public void getNextObject() {
         index++;
         controller.requestObjectData(index);
     }
 
     public static void main(String[] args) {
+
         new MetMuseumFrame().setVisible(true);
     }
 }

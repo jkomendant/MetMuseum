@@ -28,7 +28,7 @@ public class MetMuseumServiceTest {
         assertFalse(departments.isEmpty());
         MetMuseum.DepartmentList.Department department = departments.get(0);
         assertNotNull(department.displayName);
-        assert(department.departmentId > 0);
+        assertTrue(department.departmentId > 0);
     }
 
     @Test
@@ -44,12 +44,12 @@ public class MetMuseumServiceTest {
         MetMuseum.DepartmentObjects departmentObjects = response.body();
         assertNotNull(departmentObjects);
 
-        assert(departmentObjects.total > 0);
+        assertTrue(departmentObjects.total > 0);
         ArrayList<Integer> objectIDs = departmentObjects.objectIDs;
         assertNotNull(objectIDs);
         assertFalse(objectIDs.isEmpty());
         int objectID = objectIDs.get(0);
-        assert(objectID > 0);
+        assertTrue(objectID > 0);
 
     }
 
@@ -66,7 +66,7 @@ public class MetMuseumServiceTest {
         MetMuseum.Object object = response.body();
         assertNotNull(object);
 
-        assert(object.accessionYear > 0);
+        assertTrue(object.accessionYear > 0);
         assertNotNull(object.artistDisplayName);
         assertNotNull(object.city);
         assertNotNull(object.country);

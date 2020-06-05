@@ -41,7 +41,8 @@ public class MetMuseumControllerTest {
         controller.getCallbackDepartments().onResponse(call, response);
 
         //then
-        verify(comboBox).addItem(depList.departments.get(0));    }
+        verify(comboBox).addItem(depList.departments.get(0));
+    }
 
     @Test
     public void requestObjects() {
